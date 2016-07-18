@@ -6,4 +6,4 @@ Create your own flavour,yes customize it while you can.
 * _It's live on Google playstore https://play.google.com/store/apps/details?id=torch.mebulb_
 
 
-* *Visit our facebook https://www.facebook.com/pages/TwigNation-GH/1454022941523580*
+* *Visit our facebook page https://www.facebook.com/pages/TwigNation-GH/1454022941523580*

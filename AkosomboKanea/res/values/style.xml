@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    
+   
+<!--?xml version="1.0" encoding="utf-8"?-->  
+<resources>  
+    <color name="transparent_green_color">#BC000000</color>  
+    <style name="TranslucentGreen" parent="android:Theme.Translucent">  
+        <item name="android:windowBackground">@color/transparent_green_color</item>  
+    </style>  
+    
+    
+    <color name="transparent_green_colo">#BC000000</color>  
+    <style name="Tran" parent="android:Theme.Translucent.NoTitleBar">  
+        <item name="android:windowBackground">@color/transparent_green_colo</item>  
+    </style>  
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/newui"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="torch.mebulb.MainActivity" >
+  <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="SLIDE TO ADJUST SYSTEM BRIGHTNESS"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+    
+    <SeekBar
+        android:id="@+id/sb_brightbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/helpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sb_brightbar"
+        android:layout_centerHorizontal="true"
+        android:text="WHAT'S NEW"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+         />
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:clickable="true"
+        android:onClick="About"
+        android:text="About Us"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        
+        
+        android:src="@drawable/offbutton" />
+
+    
+
+    <ImageView
+        android:id="@+id/switchi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:src="@drawable/onbutton" />
+
+    <ImageView
+        android:id="@+id/imageTOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:onClick="CameraOn"
+        android:src="@drawable/offbutton" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-12345809317036777/567810924" >
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</RelativeLayout>

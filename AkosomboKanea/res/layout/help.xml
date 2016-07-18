@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@android:color/transparent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+              android:textColor="#ffffff"
+              android:textSize="18sp"
+        android:text="MOVE your hand over the proximity sensor at the HOMESCREEN of this app to switch ON your LED(flashlight) or screenlight and vice versa."/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+        android:src="@drawable/proximdicator" />
+    
+    
+       <TextView
+        android:id="@+id/tex4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="yu"
+        android:text="  TwigNation GH."
+        android:textColor="#ffbaadb5"
+        android:textSize="16sp"
+        android:typeface="monospace" />
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/tex4"
+           android:layout_centerHorizontal="true"
+           android:textColor="#ffffff"
+              android:textSize="18sp"
+           android:layout_marginBottom="20dp"
+           android:text="The distance between your hand and sensor shouldn't be more than 2cm. "
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

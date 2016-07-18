@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tex4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:onClick="yu"
+        android:text="  TwigNation GH."
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="15dp"
+        android:text="v1.2.4"
+        android:textColor="#ffbaadb5"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Akosombo Kanea"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tex4"
+        android:text="Thank you for installing this app."
+        android:textColor="#ffbaadb5"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViw3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tex2"
+        android:onClick="yu"
+        android:text="It&apos;s just a beta version. "
+        android:textColor="#ffbaadb5"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViw3"
+       
+        android:text="Please let us know if you encounter any bug. "
+        android:textColor="#ffbaadb5"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:src="@drawable/facebooklike" 
+        android:clickable="true"
+        android:onClick="MyPage"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:onClick="GooglePlay"
+        android:text="RATE THIS APP" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-12345809317036777/5678109246" >
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</RelativeLayout>

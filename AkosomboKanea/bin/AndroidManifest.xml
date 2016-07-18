@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="torch.mebulb"
+    android:versionCode="10"
+    android:versionName="1.2.4" >
+
+ <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+ <uses-permission android:name="android.permission.CAMERA"/>
+
+
+
+<uses-permission android:name="android.permission.FLASHLIGHT"/>
+<uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+ 
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	
+ 
+  
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Akosombo Kanea"
+        android:theme="@style/AppTheme"
+         
+         >
+       
+        <activity
+            android:name=".MainActivity"
+           android:theme="@style/TranslucentGreen"
+            android:label="Akosombo Kanea"
+            
+            android:screenOrientation="portrait"
+            
+            android:launchMode="singleTop"
+            android:alwaysRetainTaskState="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us" 
+             android:screenOrientation="portrait"
+             android:theme="@style/Tran"
+            
+            android:parentActivityName=".MainActivity">
+            
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+       android:value=".MainActivity" /> 
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".Helper"
+            android:label="What's New" 
+             android:screenOrientation="portrait"
+             android:theme="@style/TranslucentGreen"
+            
+            android:parentActivityName=".MainActivity">
+            
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+       android:value=".MainActivity" /> 
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                
+            </intent-filter>
+        </activity>
+          
+        <activity
+            android:name="torch.mebulb.Screenlight"
+            android:label="Screen Light" 
+           android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+             android:screenOrientation="portrait"
+            
+            android:parentActivityName=".MainActivity">
+            
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+       android:value=".MainActivity" /> 
+            <intent-filter>
+                <action android:name="torch.mebulb.Screen.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                
+            </intent-filter>
+        </activity>
+        
+         <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+ 
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    
+    
+    </application>
+   
+
+</manifest>

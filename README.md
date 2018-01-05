@@ -7,3 +7,5 @@ Create your own flavour,yes ,customize it while you can.
 
 
 * *Visit our facebook page https://www.facebook.com/pages/TwigNation-GH/1454022941523580*
+
+Privacy Policy: This app does not use any personal data from its users.
